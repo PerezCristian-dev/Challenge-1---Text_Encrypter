@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" charset="utf-8" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="icon" href="img/icon.png" type="image/icon type">
+
+</head>
+
+<header>
+    <div class="logo">
+        <img class="logo" src="C:/Users/Christheadvenger/Documents/Desafios/img/Vector.png" alt="logo" />
+    </div>
+</header>
+
+<body>
+   
+    <section class="inputsection">
+        <textarea type="text" class="txt_toencrypt" id="txt_toencrypt" style="text-align:center" placeholder="Please insert your text here..."></textarea>
+        <div class="info">
+            <a href="https://en.wikipedia.org/wiki/List_of_Unicode_characters" target="_blank">
+                <img class="infoIcon" src="C:/Users/Christheadvenger/Documents/Desafios/img/Vector (1).png" alt="logo" />
+                Solo letras minúsculas y sin acentos
+            </a>
+        </div>
+        <div class="thide">Type only on lower case, please don't use special characters such as /*?~</div>
+
+        <div class="buttonsInput">
+            <button onclick="encryptmsg()" class="encrypt_button">Encrypt Text</button>
+            <button onclick="decryptmsg()" class="decrypt_button" type="button">Decrypt Text</button>
+        </div>
+    </section>
+    <section class="outputsection">
+        <div class="outpuldiv" id="outpuldiv">
+            <img class="munheco" src="C:/Users/Christheadvenger/Documents/Desafios/img/Muñeco.png" alt="logo" />
+            <h1>Ningún mensaje fue encontrado</h1>
+            <br/>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div class="finalmessage" id="finalmessage">
+            <textarea type="text" class="txt_encrypted" id="txt_encrypted" placeholder="Ningún mensaje fue encontrado"></textarea>
+            <button onclick="copymsg()" class="copy_button" type="button">Copy Text</button>
+        </div>
+    </section>
+
+    <script src="C:/Users/Christheadvenger/Documents/Desafios/js/primerdesafio.js"></script>
+</body>
+
+
+
+</html>
